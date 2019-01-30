@@ -11,6 +11,36 @@
     <title>Furniture Store</title>
 </head>
 <body> 
+ 
+    <!-- modal box -->
+    <input type="checkbox" id="show-hide-forms" hidden>
+    <div class="forms-wrapper">
+        <label for="show-hide-forms" class="x-btn">&#10005;</label>
+        <input type="checkbox" id="show-form" hidden>
+        <div class="show-btns-wrapper">
+            <label for="show-form" class="show-form-btn show-signup-form">Sign Up</label>
+            <label for="show-form" class="show-form-btn show-login-form">Log In</label>
+        </div>
+
+        <form class="signup-form">
+            <h3 class="form-heading">Sign Up</h3>
+            <div class="fullname-inputs-wrapper">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Second Name">
+            </div>
+            <input type="text" class="form-input" placeholder="Username">
+            <input type="email" class="form-input" placeholder="Email Address">
+            <input type="password" class="form-input" placeholder="Password">
+            <input type="submit" class="form-btn" value="SIGN UP">
+        </form> 
+        <form class="login-form">
+            <h3 class="form-heading">Log In</h3>            
+            <input type="email" class="form-input" placeholder="Email Address">
+            <input type="password" class="form-input" placeholder="Password">
+            <input type="submit" class="form-btn" value="LOG IN">
+        </form>
+    </div>
+    <!-- end of modal box -->
 
     <div class="container">
         <!-- navbar -->
@@ -40,7 +70,7 @@
         <nav class="first-nav">
             <ul class="first-nav-list">
                 <li class="first-nav-item">
-                    <a href="#" class="first-nav-link"><i class="fas fa-sign-in-alt"></i>Sign Up / Log In</a>
+                    <a href="#" class="first-nav-link"><label for="show-hide-forms"><i class="fas fa-sign-in-alt"></i>Sign Up / Log In</label></a>
                 </li>
                 <li class="first-nav-item">
                     <a href="#" class="first-nav-link"><i class="fas fa-shopping-cart"></i>Cart(<span>2 Items</span>)</a>
@@ -232,6 +262,39 @@
             </div>
         </section>
         <!-- end of bestselling furniture -->
+
+        <!-- gallery -->
+        <section class="gallery">
+            <img src="images/gallery-img-1.jpeg" class="gallery-img gallery-img-1">
+            <img src="images/gallery-img-2.jpeg" class="gallery-img gallery-img-2">
+            <img src="images/gallery-img-3.jpeg" class="gallery-img gallery-img-3">
+            <img src="images/gallery-img-4.jpeg" class="gallery-img gallery-img-4">
+            <img src="images/gallery-img-5.jpeg" class="gallery-img gallery-img-5">
+            <img src="images/gallery-img-6.jpeg" class="gallery-img gallery-img-6">
+            <img src="images/gallery-img-7.jpeg" class="gallery-img gallery-img-7">
+            <img src="images/gallery-img-8.jpeg" class="gallery-img gallery-img-8">
+            <img src="images/gallery-img-9.jpeg" class="gallery-img gallery-img-9">
+            <img src="images/gallery-img-10.jpeg" class="gallery-img gallery-img-10">
+            <img src="images/gallery-img-11.jpeg" class="gallery-img gallery-img-11">
+            <img src="images/gallery-img-12.jpeg" class="gallery-img gallery-img-12">
+        </section>
+        <!-- end of gallery -->
+
+        <!-- contact -->
+        <section class="contact">
+            <h1 class="contact-heading">Join us and be in the know</h1>
+            <form class="contact-form">
+                <input type="text" class="contact-input" placeholder="Enter email address">
+                <input type="submit" value="Sign Up" class="contact-btn">
+            </form>
+        </section>
+        <!-- end of contact -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <p>&copy; Devzons. All rights reserved.</p>
+        </footer>
+        <!-- end of footer -->
     </div><!-- container -->
 
 </body>
